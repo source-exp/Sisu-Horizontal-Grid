@@ -1,0 +1,58 @@
+/* ==UserStyle==
+@name           sisu.helsinki.fi - horizontal grid for timeline page
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    New page updated page is unreadable, gotta fix it
+@author         source-exp
+==/UserStyle== */
+
+@-moz-document domain("sisu.helsinki.fi") {
+    fudis-grid.fudis-grid__xxl {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: none !important;
+        gap: 12px !important;
+        width: 100% !important;
+        place-items: stretch !important;
+    }
+
+    fudis-grid.fudis-grid__xxl > fudis-grid-item {
+        grid-column: auto !important;
+        width: 100% !important;
+    }
+
+    ul.list-unstyled.list-line-left {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        padding: 15px !important;
+        background-color: rgba(128, 128, 128, 0.05) !important;
+        gap: 20px !important;
+    }
+
+    li.term-list-item {
+        display: flex !important;
+        flex-direction: row !important;
+        min-width: fit-content !important;
+    }
+
+    .study-content-header {
+        font-size: 10px !important;
+        opacity: 0.7 !important;
+    }
+
+    .list-line-left::before {
+        display: none !important;
+    }
+
+    li.list-line-marker::before {
+        border: none !important;
+        background: none !important;
+        width: 0 !important;
+    }
+
+    app-timeline-multi-period-timing-notification-box {
+        display: block !important;
+    }
+}
