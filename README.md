@@ -8,7 +8,7 @@ A custom Stylus CSS script to improve the layout of `sisu.helsinki.fi`. It force
 - **Dark Reader:** Also optimized!
 
 ## Example
-(./pictures/example.png)
+!(./pictures/example.png)
 
 ## Installation Instructions
 
