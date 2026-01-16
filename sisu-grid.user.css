@@ -6,7 +6,7 @@
 @author         source-exp
 ==/UserStyle== */
 
-@-moz-document domain("sisu.helsinki.fi") {
+@-moz-document url-prefix("https://sisu.helsinki.fi/student/plan/") {
     fudis-grid.fudis-grid__xxl {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
